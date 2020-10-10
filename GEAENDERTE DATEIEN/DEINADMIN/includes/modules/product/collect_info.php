@@ -5,7 +5,7 @@
  * @copyright Copyright 2003-2019 Zen Cart Development Team
  * @copyright Portions Copyright 2003 osCommerce
  * @license https://www.zen-cart-pro.at/license/3_0.txt GNU General Public License V3.0
- * @version $Id: collect_info.php for Grundpreis 2019-07-21 08:53:50Z webchills $
+ * @version $Id: collect_info.php for Grundpreis 2020-10-10 13:09:50Z webchills $
  */
 if (!defined('IS_ADMIN_FLAG')) {
   die('Illegal Access');
@@ -20,7 +20,7 @@ $parameters = array(
   'products_model' => '',
   'products_image' => '',
   'products_price' => '0.0000',
-  'products_base_unit_price' => '',
+  'products_base_unit_price' => '0.00',
   'products_base_unit' => '',
   'products_virtual' => DEFAULT_PRODUCT_PRODUCTS_VIRTUAL,
   'products_weight' => '0',

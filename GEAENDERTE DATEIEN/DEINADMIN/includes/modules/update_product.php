@@ -3,10 +3,10 @@
 /**
  * Zen Cart German Specific
  * @package admin
- * @copyright Copyright 2003-2019 Zen Cart Development Team
+ * @copyright Copyright 2003-2020 Zen Cart Development Team
  * @copyright Portions Copyright 2003 osCommerce
  * @license https://www.zen-cart-pro.at/license/3_0.txt GNU General Public License V3.0
- * @version $Id: update_product.php for Grundpreis 2019-07-21 08:49:16Z webchills $
+ * @version $Id: update_product.php for Grundpreis 2020-10-10 13:12:16Z webchills $
  */
 if (!defined('IS_ADMIN_FLAG')) {
   die('Illegal Access');
@@ -26,7 +26,7 @@ if (isset($_POST['edit']) && $_POST['edit'] == 'edit') {
     'products_type' => (int)$_POST['product_type'],
     'products_model' => zen_db_prepare_input($_POST['products_model']),
     'products_price' => convertToFloat($_POST['products_price']),
-    'products_base_unit_price' => zen_db_prepare_input($_POST['products_base_unit_price']),
+    'products_base_unit_price' => convertToFloat($_POST['products_base_unit_price']),
     'products_base_unit' => zen_db_prepare_input($_POST['products_base_unit']),
     'products_date_available' => $products_date_available,
     'products_weight' => convertToFloat($_POST['products_weight']),
